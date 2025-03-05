@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_layout::head('Devmaster::Liên hệ')">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+<!--    Sử dụng Header Fragment-->
+    <header th:replace="fragments/_layout :: header"></header>
+
+<!--    Nội dung chính của trang giới thiệu-->
+    <section class="container" style="min-height: 268px">
+        <div class="row">
+            <h1>Đây là trang liên hệ</h1>
+            <hr>
+            <p>Tầng 6, Tòa <b>VIỆN CÔNG NGHỆ</b></p>
+            <p>Số 25, Phố Vũ Ngọc Phan, Láng Hạ, ĐỐng Đa, Hà Nội</p>
+        </div>
+    </section>
+
+<!--    Sử dụng Footer Fragment-->
+    <footer th:replace="fragments/_layout :: footer"></footer>
+</body>
+</html>
