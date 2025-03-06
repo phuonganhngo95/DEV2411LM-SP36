@@ -1,19 +1,20 @@
-package com.lab04.entity;
+package com.Lab04.entity;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
 
-@Data
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
-//@FieldDefaults(level =  = AccessLevel.PRIVATE)
-//@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Builder
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Users {
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     String username;
     String password;
